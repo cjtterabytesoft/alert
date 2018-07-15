@@ -3,7 +3,7 @@
 /**
  * (c) CJT TERABYTE INC
  * For the full copyright and license information, please view the LICENSE.md
- * file that was distributed with this source code
+ * file that was distributed with this source code.
  *
  *        @link: https://github.com/cjtterabytesoft/alert
  *      @author: Wilmer Arámbula <terabytefrelance@gmail.com>
@@ -13,16 +13,15 @@
  *         @yii: 3.0
  **/
 
-namespace cjtterabytesoft\alert;
+namespace cjtterabytesoft\widgets;
 
 /**
  * Alert widget renders a message from session flash. All flash messages are displayed
- * in the sequence they were assigned using setFlash. You can set message as following:
+ * in the sequence they were assigned using setFlash. You can set message as following:.
  *
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @author Alexander Makarov <sam@rmcreative.ru>
  */
-
 class Alert extends \yii\bootstrap4\Widget
 {
 	/**
@@ -32,14 +31,14 @@ class Alert extends \yii\bootstrap4\Widget
 	 * - $value is the bootstrap alert type (i.e. danger, success, info, warning)
 	 **/
 	public $alertTypes = [
-		['danger' => 'alert-danger', 'role' => 'alert'],
-		['dark' => 'alert-dark', 'role' => 'alert'],
-		['info' => 'alert-info', 'role' => 'alert'],
-		['light' => 'alert-light', 'role' => 'alert'],
-		['primary' => 'alert-primary', 'role' => 'alert'],
-		['secondary' => 'alert-secondary', 'role' => 'alert'],
-		['success' => 'alert-success', 'role' => 'alert'],
-		['warning' => 'alert-warning', 'role' => 'alert'],
+		'danger' => 'alert-danger',
+		'dark' => 'alert-dark',
+		'info' => 'alert-info',
+		'light' => 'alert-light',
+		'primary' => 'alert-primary',
+		'secondary' => 'alert-secondary',
+		'success' => 'alert-success',
+		'warning' => 'alert-warning',
 	];
 
 	/**
@@ -49,18 +48,15 @@ class Alert extends \yii\bootstrap4\Widget
 
 	public function init()
 	{
-		parent::init();
-
-		$session = \Yii::$app->getSession();
+		$session = \yii::$app->getSession();
 		$flashes = $session->getAllFlashes();
-		$appendCss = isset($this->options['class']) ? ' ' . $this->options['class'] : '';
 
 		foreach ($flashes as $type => $data) {
 			if (isset($this->alertTypes[$type])) {
 				$data = (array) $data;
 				foreach ($data as $message) {
 					/* initialize css class for each alert box */
-					$this->options['class'] = $this->alertTypes[$type] . $appendCss;
+					$this->options['class'] = $this->alertTypes[$type];
 					/* assign unique id to each alert box */
 					$this->options['id'] = $this->getId() . '-' . $type;
 					echo \yii\bootstrap4\Alert::widget([
@@ -72,5 +68,7 @@ class Alert extends \yii\bootstrap4\Widget
 				$session->removeFlash($type);
 			}
 		}
+		
+		parent::init();
 	}
 }
