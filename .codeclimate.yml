@@ -1,4 +1,12 @@
-engines:
+version: "2"
+checks:
+  method-complexity:
+    config:
+      threshold: 10
+  method-lines:
+    config:
+      threshold: 40
+plugins:
     stylelint:
         enabled: true
     duplication:
@@ -24,6 +32,8 @@ ratings:
         - "**.js"
         - "**.php"
 exclude_paths:
+    - bin/
+    - config/
     - docs/
+    - runtime/
     - tests/
-    - vendor/
