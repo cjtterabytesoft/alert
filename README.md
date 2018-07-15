@@ -3,6 +3,7 @@
         <img src="https://farm1.staticflickr.com/887/27875183957_69a3645a56_q.jpg" height="100px;">
     </a>
     <h1 align="center">Widget Alert. [Yii 3.0/Bootstrap4]</h1>
+    <h3 align="center">Renders a message from session flash.</h3>
     <br>
 </p>
 
