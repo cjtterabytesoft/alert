@@ -31,7 +31,7 @@ Alert widget renders a message from session flash. All flash messages are displa
 Flash Messages:
 
  ```php
-\Yii::$app->getSession()->setFlash('error', 'This is the message');
+\Yii::$app->getSession()->setFlash('danger', 'This is the message');
 \Yii::$app->getSession()->setFlash('success', 'This is the message');
 \Yii::$app->getSession()->setFlash('info', 'This is the message');
 ```
