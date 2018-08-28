@@ -46,9 +46,9 @@ class Alert extends \yii\bootstrap4\Widget
 	 **/
 	public $closeButton = [];
 
-	public function init()
+	public function run()
 	{
-		$session = \yii::$app->getSession();
+		$session = $this->app->getSession();
 		$flashes = $session->getAllFlashes();
 
 		foreach ($flashes as $type => $data) {
@@ -68,7 +68,5 @@ class Alert extends \yii\bootstrap4\Widget
 				$session->removeFlash($type);
 			}
 		}
-		
-		parent::init();
 	}
 }
