@@ -1,5 +1,5 @@
-Getting Started with cjtterabytesoft/alert.
-===========================================
+Getting Started with terabytesoft/alert.
+========================================
 
 #### 1.- Installation:
 
@@ -8,19 +8,19 @@ You can then install this project template using the following command:
 ##### Linux:
 
 ```
-    php composer.phar require --prefer-dist cjtterabytesoft/alert "@dev"
+    php composer.phar require --prefer-dist terabytesoft/alert "@dev"
 ```
 
 ##### Windows:
 
 ```
-    composer require --prefer-dist cjtterabytesoft/alert "@dev"
+    composer require --prefer-dist terabytesoft/alert "@dev"
 ```
 
 ##### Or add to composer.json:
 
 ```
-    "cjtterabytesoft/alert": "@dev"
+    "terabytesoft/alert": "@dev"
 ```
 
 #### 2.- Usage:
@@ -44,7 +44,7 @@ Multiple messages could be set as follows:
 Usages View:
 
 ```php
-use cjtterabytesoft\widgets\Alert;
+use app\widgets\Alert;
 
 <?= Alert::widget() ?>
 ```
