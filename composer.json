@@ -25,9 +25,13 @@
     "prefer-stable": true,
     "require": {
         "php": ">=7.1.0",
-        "yiisoft/yii-bootstrap4": "dev-master"
+        "yiisoft/yii-core": "^3.0@dev",        
+        "yiisoft/yii-bootstrap4": "^3.0@dev"
     },
     "require-dev": {
+        "yiisoft/di": "^3.0@dev",
+        "yiisoft/log": "^3.0@dev",
+        "yiisoft/cache": "^3.0@dev",        
         "phpunit/phpunit": "^7.3"
     },
     "extra": {
