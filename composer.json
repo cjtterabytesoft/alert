@@ -1,19 +1,24 @@
 {
-    "name": "cjtterabytesoft/alert",
-    "description": "Widget Alert. [Yii 3.0/Bootstrap4]",
-    "keywords": ["yii3", "bootstrap4", "widget", "alert"],
-    "homepage": "https://github.com/cjtterabytesoft/alert",
-    "type": "yii2-extension",
+    "name": "terabytesoft/alert",
+    "type": "library",
+    "description": "Yii 3.0 Widget Alert with Bootstrap4",
+    "keywords": [
+        "alert",
+        "bootstrap4", 
+        "widget", 
+        "yii3"
+    ],
+    "homepage": "https://github.com/terabytesoft/alert",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/cjtterabytesoft/alert/issues",
-        "source": "https://github.com/cjtterabytesoft/alert/widgets",
-        "forum":  "https://discuss.tusoporte.net"
+        "issues": "https://github.com/terabytesoft/alert/issues",
+        "source": "https://github.com/terabytesoft/alert/widgets",
+        "forum":  "https://discuss.cjtterabyte.com"
     },
     "authors": [
         {
             "name": "Wilmer Arambula",
-            "email": "terabytefrelance@gmail.com"
+            "email": "terabytesoftw@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -24,11 +29,13 @@
         "yiisoft/yii-bootstrap4": "^3.0@dev"
     },
     "require-dev": {
-        "yiisoft/di": "^3.0@dev",
-        "yiisoft/log": "^3.0@dev",
-        "yiisoft/cache": "^3.0@dev",
         "phpunit/phpunit": "^7.3"
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.1-dev"
+        }
+    },    
     "repositories": [
         {
             "type": "composer",
@@ -36,12 +43,15 @@
         }
     ],
     "autoload": {
-        "psr-4": {"cjtterabytesoft\\widgets\\": "src"}
+        "psr-4": {"app\\widgets\\": "src"}
     },
     "autoload-dev": {
-        "psr-4": {"cjtterabytesoft\\widgets\\tests\\": "tests"}
+        "psr-4": {"app\\widgets\\tests\\": "tests"}
     },
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
     }
 }

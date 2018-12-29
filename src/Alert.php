@@ -1,19 +1,18 @@
 <?php
 
 /**
- * (c) CJT TERABYTE INC
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  *
- *        @link: https://github.com/cjtterabytesoft/alert
- *      @author: Wilmer Arámbula <terabytefrelance@gmail.com>
- *   @copyright: (c) CJT TERABYTE INC
+ *        @link: https://github.com/terabytesoft/app-basic
+ *      @author: Wilmer Arámbula <terabytesoftw@gmail.com>
+ *   @copyright: (c) TERABYTE SOFTWARE SA
  *      @widget: [Alert]
- *       @since: 1.0
+ *       @since: 0.0.1
  *         @yii: 3.0
  **/
 
-namespace cjtterabytesoft\widgets;
+namespace app\widgets;
 
 /**
  * Alert widget renders a message from session flash. All flash messages are displayed

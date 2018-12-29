@@ -24,7 +24,6 @@ plugins:
         enabled: true
         config:
             file_extensions: "php"
-            rulesets: "yii.xml"
 ratings:
     paths:
         - "**.less"
