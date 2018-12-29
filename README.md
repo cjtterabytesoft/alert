@@ -1,18 +1,18 @@
 <p align="center">
-    <a href="https://github.com/cjtterabytesoft/widgets" target="_blank">
+    <a href="https://github.com/terabytesoft/alert" target="_blank">
         <img src="https://farm1.staticflickr.com/887/27875183957_69a3645a56_q.jpg" height="100px;">
     </a>
-    <h1 align="center">Widget Alert. [Yii 3.0/Bootstrap4]</h1>
+    <h1 align="center">Yii 3.0 Widget Alert with Bootstrap4</h1>
     <h3 align="center">Renders a message from session flash.</h3>
     <br>
 </p>
 
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](https://www.yiiframework.com/)
-[![Build Status](https://scrutinizer-ci.com/g/cjtterabytesoft/alert/badges/build.png?b=master)](https://scrutinizer-ci.com/g/cjtterabytesoft/alert/build-status/master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/cjtterabytesoft/alert/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/cjtterabytesoft/alert/?branch=master)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/cjtterabytesoft/alert/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
-[![Maintainability](https://api.codeclimate.com/v1/badges/b2806ebe6fe5b117ea20/maintainability)](https://codeclimate.com/github/cjtterabytesoft/alert/maintainability)
-[![Total Downloads](https://poser.pugx.org/cjtterabytesoft/alert/downloads)](https://packagist.org/packages/cjtterabytesoft/alert)
+[![Build Status](https://scrutinizer-ci.com/g/terabytesoft/alert/badges/build.png?b=master)](https://scrutinizer-ci.com/g/terabytesoft/alert/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/terabytesoft/alert/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/terabytesoft/alert/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/terabytesoft/alert/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b2806ebe6fe5b117ea20/maintainability)](https://codeclimate.com/github/terabytesoft/alert/maintainability)
+[![Total Downloads](https://poser.pugx.org/cjtterabytesoft/alert/downloads)](https://packagist.org/packages/terabytesoft/alert)
 
 
 
@@ -46,37 +46,8 @@ CONFIGURATION
 - Nginx.
 - OpenLiteSpeed.
 
-DOCUMENTATION STYLE GUIDE
--------------------------
-
-This extension follows the documentation described in [Yii Documentation Style Guide](https://github.com/yiisoft/yii2/blob/master/docs/documentation_style_guide.md).
-
-
-### HOW TO USE RULES CODING STANDARD WITH VSCODE:
-
-- Install squizlabs/php_codesniffer, friendsofphp/php-cs-fixer global:
-
-```
-composer global require "squizlabs/php_codesniffer >=2.3.1 <3.0"
-composer global require friendsofphp/php-cs-fixer
-```
-
-- Copy directory /vendor/yiisoft/yii2-conding-standards/Yii2 to directory path composer global example windows C:\Users\user\AppData\Roaming\Composer\vendor\squizlabs\php_codesniffer\CodeSniffer\Standards
-
-- Add config Vscode:
-
-```
-{
-    "editor.detectIndentation": false,
-    "files.eol": "\n",
-    "phpcs.standard": "Yii2",
-    "php-cs-fixer.executablePath": "php-cs-fixer",
-    "php-cs-fixer.executablePathWindows": "php-cs-fixer.bat",
-    "php-cs-fixer.config": ".php_cs;.php_cs.dist",
-    "php-cs-fixer.allowRisky": true,
-}
-```
+### [DOCUMENTATION STYLE GUIDE.](docs/documentation.md)
 
 **LICENSE:**
 
-[![License](https://poser.pugx.org/cjtterabytesoft/alert/license)](https://packagist.org/packages/cjtterabytesoft/alert)
+[![License](https://poser.pugx.org/terabytesoft/alert/license)](https://packagist.org/packages/terabytesoft/alert)

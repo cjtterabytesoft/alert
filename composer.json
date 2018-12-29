@@ -25,7 +25,6 @@
     "prefer-stable": true,
     "require": {
         "php": ">=7.1.0",
-        "yiisoft/yii-core": "^3.0@dev",
         "yiisoft/yii-bootstrap4": "^3.0@dev"
     },
     "require-dev": {
