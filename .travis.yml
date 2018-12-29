@@ -18,6 +18,5 @@ before_install:
 
 sudo: false
 
-script:
-    - 'vendor/bin/yii'
+script: true
   
