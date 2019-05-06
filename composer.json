@@ -32,10 +32,10 @@
 		"codeception/codeception": "^3.0"
 	},
     "autoload": {
-		"psr-4": {"Terabytesoft\\Widgets\\": "src"}
+		"psr-4": {"TerabyteSoft\\Widgets\\": "src"}
     },
     "autoload-dev": {
-        "psr-4": {"Terabytesoft\\Widgets\\Tests\\": "tests"}
+        "psr-4": {"TerabyteSoft\\Widgets\\Tests\\": "tests"}
     },
     "config": {
         "foxy": {

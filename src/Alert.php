@@ -12,7 +12,7 @@
  *         @yii: 3.0
  **/
 
-namespace Terabytesoft\Widgets;
+namespace TerabyteSoft\Widgets;
 
 /**
  * Alert widget renders a message from session flash. All flash messages are displayed
